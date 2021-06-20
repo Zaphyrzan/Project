@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Home Page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="external.css">
+  <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+  <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+  <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+  <script src="project.js"></script>
+</head>
+
+<body>
+  <!--start of home page-->
+  <div data-role="page" id="home">
+    <div class="header">
+      <img src="img/cloudStore.jpg.png" width="320px" height="200px" alt="Italian Trulli">
+      <h1>Cloud Game Store</h1>
+      <p>A website created by a group of friends.</p>
+    </div>
+
+    <div class="main" class="ui-content">
+      <div class="navbar">
+        <a href="#home">Home</a>
+        <a href="#gallery">Games</a>
+        <a href="#order">Order</a>
+        <a href="#about" class="right">Contact Us</a>
+      </div>
+      <h1>HOME</h1>
+      <div class="slideshow-container">
+
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 3</div>
+          <img src="img/halocover.png" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 3</div>
+          <img src="img/warhammercover.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 3</div>
+          <img src="img/battlefieldcover.jpg" style="width:100%">
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+      </div>
+      <br>
+
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
+      <h1>Our Company</h1>
+      <img class="center" src="img/forGamers.png" alt="Italian Trulli">
+      <p>We believed us and gamers have the same interest. We want the best games,
+        with affordable price. We gamers also loved a good working software. We
+        stand the fact that we gamers, love a good fps. Therefore, we provide a
+        fast website and smooth surf for gamers. Our company focuses on Online Game Distribution
+        to provide a quick access and quick purchase for our consumers to purchase video games
+        whenever and wherever they want without limitation. Play Has No Limits.
+      </p>
+    </div>
+
+    <div class="footer">
+      <h3>Copyright Reserved©. Project</h3>
+    </div>
+  </div>
+
+  <!--start of gallery page-->
+  <div data-role="page" id="gallery">
+    <div class="header">
+      <img src="img/cloudStore.jpg.png" width="320px" height="200px" alt="Italian Trulli">
+      <h1>Cloud Game Store</h1>
+      <p>A website created by a group of friends.</p>
+    </div>
+
+    <div class="main" class="ui-content">
+      <div class="navbar">
+        <a href="#home">Home</a>
+        <a href="#gallery">Games</a>
+        <a href="#order">Order</a>
+        <a href="#about" class="right">Contact Us</a>
+      </div>
+
+      <h1>Game List</h1>
+      <!--Start table for games gallery-->
+      <div class="row">
+        <div class="column">
+          <div class="card">
+            <h3><img src="img/gtaV.png"></h3>
+            <h2 style="font-size: 20px">GTA V</h2>
+            <h4>Open World Action Adventure Game</h4>
+            <h2>RM90</h2>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="card">
+            <h3><img src="img/bf2042.jpg"></h3>
+            <h2 style="font-size: 20px">Battlefield 2042</h2>
+            <h4>All-Out Modern Warfare</h4>
+            <h2>RM180</h2>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="card">
+            <h3><img src="img/ark.jpg"></h3>
+            <h2 style="font-size: 20px">Ark Survival Evolved</h2>
+            <h4>Dinosaur, Open World, Survival Game</h4>
+            <h2>RM30</h2>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="card">
+            <h3><img src="img/amongUs.jpg"></h3>
+            <h2 style="font-size: 20px">Among Us</h2>
+            <h4>Casual Multiplayer Game</h4>
+            <h2>RM12</h2>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="column">
+          <div class="card">
+            <h3><img src="img/asseto.png"></h3>
+            <h2 style="font-size: 20px">Assetto Corsa</h2>
+            <h4>Racing Game</h4>
+            <h2>RM39</h2>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="card">
+            <h3><img src="img/nfsHeat.jpg"></h3>
+            <h2 style="font-size: 20px">Need For Speed Heat</h2>
+            <h4>Next Generation Racing</h4>
+            <h2>RM200</h2>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="card">
+            <h3><img src="img/fifa21.jpg"></h3>
+            <h2 style="font-size: 20px">Fifa 21</h2>
+            <h4>Next Generation Football Game</h4>
+            <h2>RM239</h2>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="card">
+            <h3><img src="img/sfV.png"></h3>
+            <h2 style="font-size: 20px">Street Fighter</h2>
+            <h4>Fighting Game</h4>
+            <h2>RM45</h2>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="column">
+          <div class="card">
+            <h3><img src="img/dyinglight2.jpg"></h3>
+            <h2 style="font-size: 20px">Dying Light 2</h2>
+            <h4>Parkour Survival Zombie Game</h4>
+            <h2>RM239</h2>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="card">
+            <h3><img src="img/rust.jpg"></h3>
+            <h2 style="font-size: 20px">Rust</h2>
+            <h4>Open World Survival Multiplayer Game</h4>
+            <h2>RM60</h2>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="card">
+            <h3><img src="img/haloinfinite.png"></h3>
+            <h2 style="font-size: 20px">Halo Infinite</h2>
+            <h4>Sandbox Science Fiction Shooter</h4>
+            <h2>RM239</h2>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="card">
+            <h3><img src="img/ttww3.jpg"></h3>
+            <h2 style="font-size: 20px">Total War Warhammer III</h2>
+            <h4>Turn Based Strategy Game</h4>
+            <h2>RM189</h2>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+
+    <div class="footer">
+      <h3>Copyright Reserved©. Project</h3>
+    </div>
+  </div>
+
+  <!--start of order page-->
+  <div data-role="page" id="order">
+    <div class="header">
+      <img src="img/cloudStore.jpg.png" width="320px" height="200px" alt="Italian Trulli">
+      <h1>Cloud Game Store</h1>
+      <p>A website created by a group of friends.</p>
+    </div>
+
+    <div class="main" class="ui-content">
+      <div class="navbar">
+        <a href="#home">Home</a>
+        <a href="#gallery">Games</a>
+        <a href="#order">Order</a>
+        <a href="#about" class="right">Contact Us</a>
+      </div>
+      <form action="#detail" method="GET" onsubmit="return mySubmit();">
+        <h1>Order Form</h1>
+        <label for="name">Name:</label>
+        <input placeholder="Full Name" type="text" name="name" id="name" value="" required>
+        <label for="phoneNum">Phone Number:</label>
+        <input placeholder="+60" type="number" name="phoneNum" id="phoneNum" value="" required>
+        <label for="address">Address:</label>
+        <input style="height: 100px" placeholder="Delivery Address" type="text" name="address" id="address" value=""
+          required>
+        <label for="email">Email:</label>
+        <input placeholder="Email Address" type="text" name="email" id="email" value="" required>
+        <br>
+        <label for="payment">Payment Method:</label>
+        <select name="payment" id="payment">
+          <option value="Paypal">Paypal</option>
+          <option value="Bank Transfer">Bank Transfer</option>
+          <option value="Debit Card">Debit Card</option>
+          <option value="Credit Card">Credit Card</option>
+        </select>
+      </form>
+      </form>
+      <table width="100%" border="1" cellpadding="5" id="calculator" onsubmit="return CalculateItemsValue();">
+        <tr>
+          <td bgcolor="#1b2838">&nbsp;Available Games</td>
+          <td width="400" bgcolor="#1b2838"><strong>Categories</strong></td>
+          <td width="50" bgcolor="#1b2838"><strong>Quantity</strong></td>
+          <td width="150" bgcolor="#1b2838"><strong>Price</strong></td>
+        </tr>
+        <tr>
+          <td>GTA V</td>
+          <td>Action</td>
+          <td>
+            <input name="qnt_1" type="text" id="qnt_1" value="0" size="3" data-price="90"
+              onkeyup="CalculateItemsValue()" />
+          </td>
+          <td>RM90</td>
+        </tr>
+        <tr>
+          <td>Battlefield 2042</td>
+          <td>Action</td>
+          <td><input name="qnt_2" type="text" id="qnt_2" value="0" size="3" data-price="180"
+              onkeyup="CalculateItemsValue()" /></td>
+          <td>RM180</td>
+        </tr>
+        <tr>
+          <td>Ark: Survival Evolved</td>
+          <td>Adventure</td>
+          <td><input name="qnt_3" type="text" id="qnt_3" value="0" size="3" data-price="30"
+              onkeyup="CalculateItemsValue()" /></td>
+          <td>RM30</td>
+        </tr>
+        <tr>
+          <td>Among Us</td>
+          <td>Casual</td>
+          <td><input name="qnt_4" type="text" id="qnt_4" value="0" size="3" data-price="12"
+              onkeyup="CalculateItemsValue()" /></td>
+          <td>RM12</td>
+        </tr>
+        <tr>
+          <td>Assetto Corsa</td>
+          <td>Racing</td>
+          <td><input name="qnt_5" type="text" id="qnt_5" value="0" size="3" data-price="39"
+              onkeyup="CalculateItemsValue()" /></td>
+          <td>RM39</td>
+        </tr>
+        <tr>
+          <td>Need For Speed Heat</td>
+          <td>Racing</td>
+          <td><input name="qnt_6" type="text" id="qnt_6" value="0" size="3" data-price="200"
+              onkeyup="CalculateItemsValue()" /></td>
+          <td>RM200</td>
+        </tr>
+        <tr>
+          <td>FIFA 21</td>
+          <td>Sports</td>
+          <td><input name="qnt_7" type="text" id="qnt_7" value="0" size="3" data-price="239"
+              onkeyup="CalculateItemsValue()" /></td>
+          <td>RM239</td>
+        </tr>
+        <tr>
+          <td>Street Fighter V</td>
+          <td>Action</td>
+          <td><input name="qnt_8" type="text" id="qnt_8" value="0" size="3" data-price="45"
+              onkeyup="CalculateItemsValue()" /></td>
+          <td>RM45</td>
+        </tr>
+        <tr>
+          <td>Dying Light 2</td>
+          <td>Action</td>
+          <td><input name="qnt_9" type="text" id="qnt_9" value="0" size="3" data-price="239"
+              onkeyup="CalculateItemsValue()" /></td>
+          <td>RM239</td>
+        </tr>
+        <tr>
+          <td>Rust</td>
+          <td>Action</td>
+          <td><input name="qnt_10" type="text" id="qnt_10" value="0" size="3" data-price="60"
+              onkeyup="CalculateItemsValue()" /></td>
+          <td>RM60</td>
+        </tr>
+        <tr>
+          <td>Halo Infinite</td>
+          <td>Action</td>
+          <td><input name="qnt_9" type="text" id="qnt_11" value="0" size="3" data-price="239"
+              onkeyup="CalculateItemsValue()" /></td>
+          <td>RM239</td>
+        </tr>
+        <tr>
+          <td>Total War: Warhammer III</td>
+          <td>Strategy</td>
+          <td><input name="qnt_10" type="text" id="qnt_12" value="0" size="3" data-price="189"
+              onkeyup="CalculateItemsValue()" /></td>
+          <td>RM189</td>
+        </tr>
+        <tr>
+          <td bgcolor="#1b2838">&nbsp;</td>
+          <td bgcolor="#1b2838"></td>
+          <td align="right" bgcolor="#1b2838"><strong>Grand Total:</strong></td>
+          <td bgcolor="#1b2838"><strong>
+              <div id="ItemsTotal">RM0</div>
+            </strong></td>
+        </tr>
+      </table>
+      <br>
+
+      <input type="submit" value="Make Purchase" onclick="mySubmit()">
+
+      <input type="reset" value="Clear">
+      </form>
+    </div>
+
+    <div class="footer">
+      <h3>Copyright Reserved©. Project</h3>
+    </div>
+  </div>
+
+  <!--start of detail page-->
+  <div data-role="page" id="detail">
+    <div class="header">
+      <img src="img/cloudStore.jpg.png" width="320px" height="200px" alt="Italian Trulli">
+      <h1>Cloud Game Store</h1>
+      <p>A website created by a group of friends.</p>
+    </div>
+    <div class="main" class="ui-content">
+      <div class="navbar">
+        <a href="#home">Home</a>
+        <a href="#gallery">Games</a>
+        <a href="#order">Order</a>
+        <a href="#about" class="right">Contact Us</a>
+      </div>
+
+      <div class="main" class="ui-content">
+        <form action="#detail" method="GET" class="">
+          <h1>Detail Form</h1>
+          <div class="side">
+            <label for="fname">Name:</label>
+            <span style="color:rgb(209, 206, 206);" id="fname"></span>
+            <br><br><br>
+            <label for="phone">Phone Number:</label>
+            <span style="color:rgb(209, 206, 206);" id="phone"></span>
+            <br><br><br>
+            <label for="address">Address:</label>
+            <span style="color:rgb(209, 206, 206);" id="addr"></span>
+            <br><br><br>
+            <label for="email">Email:</label>
+            <span style="color:rgb(209, 206, 206);" id="mail"></span>
+            <br><br><br>
+            <label for="payment">Payment Method:</label>
+            <span style="color:rgb(209, 206, 206);" id="result"></span>
+            <br><br><br>
+            <label for="payment">Total:</label>
+            <span style="color:rgb(209, 206, 206);" id="GrandTotal"></span>
+          </div>
+          <p>Thank you for making the purchase. Please come again!</p>
+        </form>
+      </div>
+
+      <div class="footer">
+        <h3>Copyright Reserved©. Project</h3>
+      </div>
+    </div>
+  </div>
+  <!--start of about page-->
+  <div data-role="page" id="about">
+    <div class="header">
+      <img src="img/cloudStore.jpg.png" width="320px" height="200px" alt="Italian Trulli">
+      <h1>Cloud Game Store</h1>
+    </div>
+    <div class="main" class="ui-content">
+      <div class="navbar">
+        <a href="#home">Home</a>
+        <a href="#gallery">Games</a>
+        <a href="#order">Order</a>
+        <a href="#about" class="right">Contact Us</a>
+      </div>
+      <h1>Contact Us</h1>
+      <!-----Team------->
+      <section id="team">
+
+        <div class="container">
+          <h1>Our Team</h1>
+          <div class="row">
+            <div class="columns">
+              <div class="card">
+                <img src="img/anas.jpeg" alt="Jane" style="width:100%">
+                <div class="container">
+                  <h2>Software Engineer</h2>
+                  <p style="color: black;" class="title">Muhammad Anas Bin A.Halim</p>
+                  <p style="color: black;">In-Charged of Javascript</p>
+                  <p style="color: black;">18DDT19F1088</p>
+                  <div data-role="footer">
+
+                    <a href="tel:01156325960" data-icon="phone">Call</a>
+                    <a href="mailto:anashalim01@gmail.com?subject=Testing out mailto!" data-icon="mail">Email</a>
+                    <a href="sms:01156325960" data-icon="comment">SMS</a>
+                  </div><!-- /footer -->
+                </div>
+              </div>
+            </div>
+          
+            <div class="columns">
+              <div class="card">
+                <img src="img/wan.jpg" alt="Mike" style="width:100%">
+                <div class="container">
+                  <h2>Design Director</h2>
+                  <p style="color: black;" class="title">Wan Zafirzan Bin Wan Tarmizan</p>
+                  <p style="color: black;">In-Charged of HTML Design Direction</p>
+                  <p style="color: black;">18DDT19F1123</p>
+                  <div data-role="footer">
+                    <a href="tel:01165546909" data-icon="phone">Call</a>
+                    <a href="mailto:wzafirzan@gmail.com?subject=Testing out mailto!" data-icon="mail">Email</a>
+                    <a href="sms:01165546909" data-icon="comment">SMS</a>
+                  </div><!-- /footer -->
+                </div>
+              </div>
+            </div>
+            
+            <div class="columns">
+              <div class="card">
+                <img src="img/zakwan.JPG" alt="John" style="width:100%">
+                <div class="container">
+                  <h2>Web Designer</h2>
+                  <p style="color: black;" class="title">Muhammad Khairul Zakwan B. Mohd Nasir</p>
+                  <p style="color: black;">In-Charged of CSS.</p>
+                  <p style="color: black;">18DDT19F1062</p>
+                  <div data-role="footer">
+
+                    <a href="tel:0123456789" data-icon="phone">Call</a>
+                    <a href="mailto:wzafirzan@gmail.com?subject=Testing out mailto!" data-icon="mail">Email</a>
+                    <a href="sms:0123456789" data-icon="comment">SMS</a>
+                  </div><!-- /footer -->
+                </div>
+              </div>
+            </div>
+          </div>
+
+    <div class="footer">
+      <h3>Copyright Reserved©. Project</h3>
+    </div>
+  </div>
+
+</body>
+
+</html>
